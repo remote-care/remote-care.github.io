@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+    
+  }
+ 
+  
+
+
+ 
+p {
+  font-size: 20px;
+}
+
+
+
+body {
+  background-color: #d9d9db;
+  font-size: 4rem;
+}
+  
+.sidenav {
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #39447A;
+    
+    
+   
+  }
+  .elements {
+      margin-top: 57%;
+      margin-left: 25%;
+  }
+ 
+ 
+
+  
+  
+  .fa-telegram:hover {
+    color: #31A4D7;
+  }
+ 
+  
+  
+  
+  .about {
+    display: flex;
+    min-height: 100vh;
+    margin-bottom: 70px;
+    background: #d9d9db;
+    padding-left: 10px;
+    padding-top: 19%;
+   
+    
+
+  }
+  .projects {
+    min-height: 100vh;
+    background: #8d2b80;
+    padding-left: 10px;
+    padding-top: 19%;
+
+  }
+ 
+  .contact {
+    min-height: 100vh;
+    background: #6f8892;
+    padding-left: 10px;
+    padding-top: 19%;
+
+  }
+  .step {
+    text-align: left;
+    
+    background: #d9d9db;
+    padding-left: 10px;
+    padding-top: 10%;
+    z-index: -1;
+
+  }
+  
+  
+   
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #e9e0e0;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  
+  .main {
+    margin-left: 25%; 
+    font-size: 22px; 
+    
+  }
+
+  .contact a {
+    color: #535461;
+  }
+  .contact p {
+    color: #535461;
+  }
+  .contact h2 {
+    color: #535461;
+  }
+ 
+
+  @media only screen and (max-width: 750px) {
+    .sidenav {
+        display: none;
+    }
+    .main {
+      margin-left: 0; 
+}
+
+
+.about {
+  display: block;
+  height: 100vh;
+ 
+}
+
+}
+
+
+
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+
+
+
+ 
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #39447A;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+ 
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+button {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 35px;
+  cursor: pointer;
+  color: rgb(15, 2, 2);
+  padding: 1px;
+  background-color: transparent;
+  border: none;
+  
+  
+  
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+@media only screen and (min-width: 750px) {
+  #navbar{
+    display: none;
+  }
+ 
+}
+@media only screen and (min-width: 868px) {
+  #navbar{
+    display: none;
+  }
+  
+  
+} 
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  
+}
+
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+img {
+height: auto;
+
+max-width: 100%;
+vertical-align: middle;
+}
+
+
+
+.cards {
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.cards_item {
+display: flex;
+padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+.cards_item {
+  width: 50%;
+}
+}
+
+@media (min-width: 56rem) {
+.cards_item {
+  width: 33.3333%;
+}
+}
+
+.card {
+background-color: white;
+border-radius: 0.55rem;
+box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+display: flex;
+flex-direction: column;
+overflow: hidden;
+}
+
+.card_content {
+padding: 1rem;
+background: linear-gradient(to bottom left, #A48EBB 40%, #39447A 100%);
+}
+
+.card_title {
+color: #ffffff;
+font-size: 1.4rem;
+font-weight: 700;
+letter-spacing: 1px;
+text-transform: capitalize;
+margin: 0px;
+}
+
+.card_text {
+color: #ffffff;
+font-size: 1.0rem;
+line-height: 1.5;
+margin-bottom: 1.25rem;    
+font-weight: 500;
+}
+.tech {
+  text-align: center;
+}
+.links {
+  text-align: center;
+}
