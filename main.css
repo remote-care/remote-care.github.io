@@ -62,13 +62,14 @@ body {
   }
   .projects {
     min-height: 100vh;
-    background: #8d2b80;
+    background: #a3ffd9;
     padding-left: 10px;
     padding-top: 19%;
 
   }
  
   .contact {
+    display: flex;
     min-height: 100vh;
     background: #6f8892;
     padding-left: 10px;
@@ -85,6 +86,26 @@ body {
 
   }
   
+  #myBtn {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    top: 90vh;
+    right: 30px;
+    z-index: 199;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
   
    
   .sidenav a {
@@ -102,19 +123,15 @@ body {
   
   .main {
     margin-left: 25%; 
-    font-size: 22px; 
+    font-size: 18px; 
     
   }
 
   .contact a {
-    color: #535461;
+    color: #1722b8;
+    text-decoration: none;
   }
-  .contact p {
-    color: #535461;
-  }
-  .contact h2 {
-    color: #535461;
-  }
+  
  
 
   @media only screen and (max-width: 750px) {
